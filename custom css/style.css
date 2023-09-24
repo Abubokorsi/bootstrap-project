@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar{
+    background-color:rgba(1, 1, 72, 0.651);
+}
+.navbar-brand img {
+  width: 100px;
+  height: 80px;
+}
+.nav-item {
+  margin: 20px;
+}
+.nav-link {
+  color: yellowgreen;
+}
+.nav-link:hover {
+  color: white;
+}
+.carousel-item img {
+  height: 550px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: brown;
+}
+.section-title h2{
+    font-size: 50px;
+    letter-spacing: 6px;
+    color: yellowgreen;
+}
+.section-title p {
+  width: 700px;
+  margin: auto;
+}
+.about-item {
+  border: 5px solid yellowgreen;
+  padding: 8px;
+}
+.about-item i {
+  font-size: 60px;
+  color: yellowgreen;
+}
+.about-meta h4 {
+  color: yellowgreen;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+}
+.welcome-img img{
+    width: 100%;
+    height: 420px;
+}
