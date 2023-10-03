@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>basic setup</title>
+    <title>A F C and Cafe</title>
     <!-- favicon-icon -->
     <link
       rel="shortcut icon"
-      href="images/Basic-favicon-icon.jpeg"
+      href="images/favicon-icon.png"
       type="image/x-icon"
     />
     <!-- bootstrap-css -->
@@ -48,44 +48,50 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#offers" class="nav-link">Offers</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="#menu"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                services
+                menu
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">home delivary</a></li>
-                <li><a class="dropdown-item" href="#">free service</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">fresh food</a></li>
+                <li><a class="dropdown-item" href="#braekfast">Breakfast</a></li>
+                <li><a class="dropdown-item" href="#lunch">Lunch</a></li>
+                <li><a class="dropdown-item" href="#dinner">Dinner</a></li>
+                <li><a class="dropdown-item" href="#drinks">Drinks</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Offers</a>
+              <a href="#gallery" class="nav-link">Gallery</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Gallery</a>
+              <a href="#blog" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Blog</a>
+              <a href="#reserved" class="nav-link">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
             <li class="nav-item">
               <a
-                href=""
-                class="nav-link"
+                href="#contact"
+                class="nav-link text-yellowgreen"
                 data-bs-toggle="modal"
                 data-bs-target="#login"
-                >Contact</a
+                >Login</a
               >
             </li>
           </ul>
@@ -151,7 +157,8 @@
     </div>
     <!-- navbar end -->
     <!-- carousel start -->
-    <div
+    <section id="home">
+      <div
       id="carouselExampleIndicators"
       class="carousel slide"
       data-bs-ride="true"
@@ -192,19 +199,39 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/carousel-1.jpeg" class="d-block w-100" alt="" />
+          <img
+            src="images/carousel/carousel-1.jpg"
+            class="d-block w-100"
+            alt=""
+          />
         </div>
         <div class="carousel-item">
-          <img src="images/carousel-2.jpeg" class="d-block w-100" alt="" />
+          <img
+            src="images/carousel/carousel-2.jpeg"
+            class="d-block w-100"
+            alt=""
+          />
         </div>
         <div class="carousel-item">
-          <img src="images/carousel-3.jpeg" class="d-block w-100" alt="" />
+          <img
+            src="images/carousel/carousel-3.jpeg"
+            class="d-block w-100"
+            alt=""
+          />
         </div>
         <div class="carousel-item">
-          <img src="images/carousel-4.jpeg" class="d-block w-100" alt="" />
+          <img
+            src="images/carousel/carousel-4.jpeg"
+            class="d-block w-100"
+            alt=""
+          />
         </div>
         <div class="carousel-item">
-          <img src="images/carousel-5.jpeg" class="d-block w-100" alt="" />
+          <img
+            src="images/carousel/carousel-5.jpeg"
+            class="d-block w-100"
+            alt=""
+          />
         </div>
       </div>
       <button
@@ -226,6 +253,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    </section>
     <!-- carousel end -->
     <!-- about us start -->
     <section class="section-padding p-5" id="about">
@@ -240,7 +268,7 @@
           </p>
         </div>
         <div class="row my-4">
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-sm-6">
             <div class="about-item text-center">
               <div class="about-icon">
                 <i class="icofont-food-basket"></i>
@@ -250,7 +278,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-sm-6">
             <div class="about-item text-center">
               <div class="about-icon">
                 <i class="icofont-free-delivery"></i>
@@ -260,7 +288,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-sm-6">
             <div class="about-item text-center">
               <div class="about-icon">
                 <i class="icofont-chef"></i>
@@ -270,7 +298,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-sm-6">
             <div class="about-item text-center">
               <div class="about-icon">
                 <i class="icofont-dining-table"></i>
@@ -285,7 +313,7 @@
           <div class="col-lg-6 col-md-6">
             <div class="welcome-text">
               <h2>our story</h2>
-              <h1 class="display-4">Welcome</h1>
+              <h1 class="display-3">Welcome</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
                 quo! Ex exercitationem voluptate consequuntur quos non
@@ -307,22 +335,1670 @@
               <a class="btn btn-outline-success" href="#">See More</a>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6"> 
-              <div class="welcome-img">
-                <img class="img-fluid" src="images/welcome.jpg" alt="">
-              </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="welcome-img">
+              <img class="img-fluid" src="images/welcome.jpg" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- about us end -->
-    <!-- next services start -->
+    <!-- offer start -->
+    <section id="offers">
+      <div class="offer-section">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2 class="m-4">Discount Offer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dignissimos sed qui et modi fugit illo voluptates laborum sunt
+              cumque vel. Sapiente atque dolor nobis quasi in eos libero quae
+              consectetur? Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/offers/offer-1.jpeg" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>Eid Offer</h5>
+                  <h4>Barger and pasta</h4>
+                  <h6>A F C for Mohammodpur satmosgid Road Dhaka</h6>
+                  <h6 class="text-warning">30% Off</h6>
+                  <a href="#" class="btn btn-outline-success"
+                    >Order Now<i class="icofont-duotone icofont-cart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/offers/offer-2.jpeg" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>Eid Offer</h5>
+                  <h4>Barger and pasta</h4>
+                  <h6>A F C for Mohammodpur satmosgid Road Dhaka</h6>
+                  <h6 class="text-warning">30% Off</h6>
+                  <a href="#" class="btn btn-outline-success"
+                    >Order Now<i class="icofont-duotone icofont-cart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/offers/offer-3.jpeg" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>Eid Offer</h5>
+                  <h4>Barger and pasta</h4>
+                  <h6>A F C for Mohammodpur satmosgid Road Dhaka</h6>
+                  <h6 class="text-warning">30% Off</h6>
+                  <a href="#" class="btn btn-outline-success"
+                    >Order Now<i class="icofont-duotone icofont-cart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/offers/offer-4.jpeg" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>Eid Offer</h5>
+                  <h4>Barger and pasta</h4>
+                  <h6>A F C for Mohammodpur satmosgid Road Dhaka</h6>
+                  <h6 class="text-warning">30% Off</h6>
+                  <a href="#" class="btn btn-outline-success"
+                    >Order Now<i class="icofont-duotone icofont-cart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- next services End -->
+    <!-- offer End -->
+    <!-- menu start -->
+    <section id="menu">
+      <div class="menu-section">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2 class="m-4">Menu items</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dignissimos sed qui et modi fugit illo voluptates laborum sunt
+              cumque vel. Sapiente atque dolor nobis quasi in eos libero quae
+              consectetur? Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="menu-btn text-center my-3">
+            <div class="row-12 mx-auto my-4">
+              <button
+                type="button"
+                class="btn btn-outline-success"
+                data-filter="all"
+              >
+                All Menu
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-success"
+                data-filter=".braekfast"
+              >
+                Braekfast
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-success"
+                data-filter=".lunch"
+              >
+                Lunch
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-success"
+                data-filter=".dinner"
+              >
+                Dinner
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-success"
+                data-filter=".drinks"
+              >
+                Drinks
+              </button>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="mix braekfast" data-order="1" id="braekfast">
+              <div class="row my-1">
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/braekfast-1.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/braekfast-2.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/braekfast-3.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/braekfast-4.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix lunch" data-order="2" id="lunch">
+              <div class="row my-1">
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/lunch-1.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/lunch-2.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/lunch-3.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/lunch-4.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix lunch dinner" data-order="3" id="dinner">
+              <div class="row my-1">
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/dinner-1.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/dinner-2.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/dinner-3.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/dinner-4.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix braekfast drinks active" data-order="4" id="drinks">
+              <div class="row my-1">
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/drinks-1.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/drinks-2.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/drinks-3.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <img src="images/menu/drinks-4.jpg" alt="" />
+                    <div class="card-body">
+                      <h4>braekfast-1</h4>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h3 class="text-warning">300tk</h3>
+                    </div>
+                    <div class="card-footer">
+                      <a href="" class="btn btn-outline-success">Oder Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- menu End -->
+    <!-- Gallery srart -->
+    <section class="section-padding p-5" id="gallery">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2 class="m-4">photo Gallery</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Dignissimos sed qui et modi fugit illo voluptates laborum sunt
+            cumque vel. Sapiente atque dolor nobis quasi in eos libero quae
+            consectetur? Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <!-- Gallery -->
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img
+              src="images/Gallery/sm-1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+            />
+
+            <img
+              src="images/Gallery/lg-1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Wintry Mountain Landscape"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="images/Gallery/lg-3.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Mountains in the Clouds"
+            />
+
+            <img
+              src="images/Gallery/sm-3.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="images/Gallery/sm-4.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Waves at Sea"
+            />
+
+            <img
+              src="images/Gallery/lg-4.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Yosemite National Park"
+            />
+          </div>
+        </div>
+        <!-- Gallery -->
+      </div>
+    </section>
+    <!-- Gallery end -->
+    <!-- new blog start -->
+    <section class="section-title text-center" id="blog">
+      <h2 class="m-4">Blog</h2>
+      </div>
+      <div id="carousel-bottm" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators custom-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel-bottm"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-bottm"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-bottm"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-bottm"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-bottm"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-bottm"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-bottm"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-2 bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-1.jpg"
+                    class="card-img-top"
+                    alt="Waterfall"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-2.jpg"
+                    class="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-3.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-1.jpg"
+                    class="card-img-top"
+                    alt="Waterfall"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-2.jpg"
+                    class="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-3.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-1.jpg"
+                    class="card-img-top"
+                    alt="Waterfall"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-2.jpg"
+                    class="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-3.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-1.jpg"
+                    class="card-img-top"
+                    alt="Waterfall"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-2.jpg"
+                    class="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-3.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-1.jpg"
+                    class="card-img-top"
+                    alt="Waterfall"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-2.jpg"
+                    class="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-3.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-1.jpg"
+                    class="card-img-top"
+                    alt="Waterfall"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-2.jpg"
+                    class="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-3.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-1.jpg"
+                    class="card-img-top"
+                    alt="Waterfall"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-2.jpg"
+                    class="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-3.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-1.jpg"
+                    class="card-img-top"
+                    alt="Waterfall"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-2.jpg"
+                    class="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-3.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 d-none d-lg-block bolg-card">
+                <div class="card">
+                  <img
+                    src="images/menu/braekfast-4.jpg"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-bottm"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-bottm"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- new blog end -->
+    <!-- video carousel start -->
+    <section id="video-blog">
+      <div
+      id="videoCarousel"
+      class="carousel slide"
+      data-bs-ride="true"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="https://mdbcdn.b-cdn.net/img/video/forest.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#videoCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#videoCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </section>
+    <!-- video carousel end -->
+<!-- Reservation start -->
+<section class="section-padding p-5" id="reserved">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2 class="m-4">photo Gallery</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Dignissimos sed qui et modi fugit illo voluptates laborum sunt
+        cumque vel. Sapiente atque dolor nobis quasi in eos libero quae
+        consectetur? Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+    <div class="row">
+    <div class="col-lg-6 col-lg-sm-12">
+      <img src="images/reserved-igm.jpg" alt="" class="img-fluid reserved w-100">
+    </div>
+    <div class="row col-lg-6 col-lg-sm-12">
+      <div class="reserv-form">
+        <form action="">
+          <div class="mb-3">
+            <input type="text" class="form-control rounded-0 " placeholder="Input Your Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control rounded-0" placeholder="Input Your Email">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control rounded-0" placeholder="Input Your Phone">
+          </div>
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-lg-6"><input type="date" class="form-control rounded"></div>
+              <div class="col-lg-6"><input type="time" class="form-control rounded"></div>
+            </div>
+            <div class="mb-3">
+              <input type="number" class="form-control rounded-0 " placeholder="person">
+            </div>
+            <div class="mb-3">
+              <input type="submit" class="form-control rounded-0 btn btn-outline-success " value="Booking">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- Reservation end -->
+<!-- Contact start -->
+<section class="section-padding p-5" id="contact">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2 class="m-4">Contact Us</h2>
+    </div>
+    <div class="contact-Us">
+      <div class="row my-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="about-item text-center">
+            <div class="about-icon">
+              <i class="icofont-ui-call"></i>
+            </div>
+            <div class="about-meta">
+              <h4>Call</h4>
+              <a href="#">01725775672</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="about-item text-center">
+            <div class="about-icon">
+              <i class="icofont-email"></i>
+            </div>
+            <div class="about-meta">
+              <h4>Email</h4>
+              <small><a href="abubokorsiddik905@gmail.com">abubokorsiddik905@gmail.com</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="about-item text-center">
+            <div class="about-icon">
+              <i class="icofont-facebook"></i>
+            </div>
+            <div class="about-meta">
+              <h4>Facebook</h4>
+              <a href="https://www.facebook.com/abubokor.siddik.7564129">Abubokor</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="about-item text-center">
+            <div class="about-icon">
+              <i class="icofont-whatsapp"></i>
+            </div>
+            <div class="about-meta">
+              <h4>Whatsapp</h4>
+              <a href="https://web.whatsapp.com/">Hasan Vlog</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.400932269352!2d90.42190587527756!3d23.76873318807242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c78ed4de21dd%3A0x5b0b37e9471fa585!2sA.F.C!5e0!3m2!1sen!2sbd!4v1696330128953!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <form action="">
+      <div class="row">
+        <div class="col-lg-6">
+            <div class="mb-3">
+              <input type="text" class="form-control rounded-0 " placeholder="Input Your Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control rounded-0" placeholder="Input Your Email">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control rounded-0" placeholder="Input Your Phone">
+            </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mb-3">
+            <textarea rows="3" class="form-control text-area" placeholder="Input Your Masseges"></textarea>
+          </div>
+          <div class="mb-3">
+            <input type="submit" class="form-control btn btn-outline-success" value="Send Masseges">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+    <!-- Footer -->
+<footer class="bg-dark text-center text-white" id="footer">
+  <!-- Grid container -->
+  <div class="container">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="icofont-facebook"></i>
+      </a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="icofont-twitter"></i>
+      </a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="icofont-world"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="icofont-instagram"></i>
+      </a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="icofont-whatsapp"></i></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="icofont-duotone icofont-share-alt"></i>
+      </a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">navbar</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">home</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Abuout</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">reserved</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">team</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">service</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">bif cbab</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">nan</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">chcken</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">fish</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Drinks</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Orengs</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Mango</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">banena</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">naspoti</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">branch</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Mohammod pur</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Dhanmondi</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Mirpur</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Mohakhali</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(130, 146, 241, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Abubokor siddik A F C </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+ 
+
+<!-- Contact end -->
+
+    <!-- jquery link -->
+    <script src="jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <!-- mixit up link -->
+    <script src="custom-js/mixitup.min.js"></script>
     <!-- bootstrap js  -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- custom js-->
     <script src="custom-js/custom.js"></script>
+    <script>
+      var mixer = mixitup(".menu-items");
+    </script>
   </body>
 </html>
